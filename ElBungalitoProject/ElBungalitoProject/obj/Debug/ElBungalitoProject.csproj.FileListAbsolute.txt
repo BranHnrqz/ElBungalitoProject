@@ -1,0 +1,11 @@
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\bin\Debug\ElBungalitoProject.exe.config
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\bin\Debug\ElBungalitoProject.exe
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\bin\Debug\ElBungalitoProject.pdb
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.AssemblyReference.cache
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.Properties.Resources.resources
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.GenerateResource.cache
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.CoreCompileInputs.cache
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.exe
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.pdb
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.Principal.resources

@@ -9,3 +9,4 @@ C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungal
 C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.exe
 C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.pdb
 C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.Principal.resources
+C:\Users\BRANDON\Documents\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.Views.frmLogAdmin.resources

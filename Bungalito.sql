@@ -32,7 +32,7 @@ on update cascade
 create table DetalleBebida(
 idDetalleBebida int primary key identity(1,1) NOT NULL,
 Especialidad varchar(50) NOT NULL,
-Precio decimal NOT NULL,
+Precio float NOT NULL,
 Descripcion varchar(100) not null,
 idBebida int not null,
 foreign key (idBebida) references Bebida(idBebida)
@@ -43,7 +43,7 @@ on update cascade
 create table DetallePlato(
 idDetallePlato int primary key identity(1,1) NOT NULL,
 Especialidad varchar(50) NOT NULL,
-Precio decimal NOT NULL,
+Precio float NOT NULL,
 Descripcion varchar(100) not null,
 idPlato int not null,
 foreign key (idPlato) references Plato(idPlato)
@@ -55,7 +55,7 @@ create table DetalleFacturaPlato(
 idDetalleFacturaPlato int primary key identity(1,1) NOT NULL,
 idDetallePlato int not null,
 Cantidad int not null,
-SubTotal decimal not null
+SubTotal float not null
 foreign key (idDetallePlato) references DetallePlato(idDetallePlato)
 on delete cascade
 on update cascade
@@ -65,7 +65,7 @@ create table DetalleFacturaBebida(
 idDetalleFacturaBebida int primary key identity(1,1) NOT NULL,
 idDetalleBebida int not null,
 Cantidad int not null,
-SubTotal decimal not null
+SubTotal float not null
 foreign key (idDetalleBebida) references DetalleBebida(idDetalleBebida)
 on delete cascade
 on update cascade
@@ -74,7 +74,7 @@ on update cascade
 create table Factura(
 idFactura int primary key identity(1,1) NOT NULL,
 Cliente varchar(50) NOT NULL,
-PagoTotal decimal NOT NULL,
+PagoTotal float NOT NULL,
 idDetalleFacturaPlato int,
 idDetalleFacturaBebida int
 foreign key (idDetalleFacturaPlato) references DetalleFacturaPlato(idDetalleFacturaPlato),

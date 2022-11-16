@@ -16,6 +16,8 @@ idBebida int primary key identity(1,1) NOT NULL,
 Bebida varchar(50) NOT NULL,
 idTipoBebida int not null,
 foreign key (idTipoBebida) references TipoBebida(idTipoBebida)
+on delete cascade
+on update cascade
 )
 
 create table Plato(
@@ -23,6 +25,8 @@ idPlato int primary key identity(1,1) NOT NULL,
 Plato varchar(50) NOT NULL,
 idTipoPlato int not null,
 foreign key (idTipoPlato) references TipoPlato(idTipoPlato)
+on delete cascade
+on update cascade
 )
 
 create table DetalleBebida(
@@ -32,6 +36,8 @@ Precio decimal NOT NULL,
 Descripcion varchar(100) not null,
 idBebida int not null,
 foreign key (idBebida) references Bebida(idBebida)
+on delete cascade
+on update cascade
 )
 
 create table DetallePlato(
@@ -41,22 +47,40 @@ Precio decimal NOT NULL,
 Descripcion varchar(100) not null,
 idPlato int not null,
 foreign key (idPlato) references Plato(idPlato)
+on delete cascade
+on update cascade
 )
 
-create table DetalleFactura(
-idDetalleFactura int primary key identity(1,1) NOT NULL,
-idDetalleBebida int NOT NULL,
+create table DetalleFacturaPlato(
+idDetalleFacturaPlato int primary key identity(1,1) NOT NULL,
 idDetallePlato int not null,
-foreign key (idDetalleBebida) references DetalleBebida(idDetalleBebida),
+Cantidad int not null,
+SubTotal decimal not null
 foreign key (idDetallePlato) references DetallePlato(idDetallePlato)
+on delete cascade
+on update cascade
+)
+
+create table DetalleFacturaBebida(
+idDetalleFacturaBebida int primary key identity(1,1) NOT NULL,
+idDetalleBebida int not null,
+Cantidad int not null,
+SubTotal decimal not null
+foreign key (idDetalleBebida) references DetalleBebida(idDetalleBebida)
+on delete cascade
+on update cascade
 )
 
 create table Factura(
 idFactura int primary key identity(1,1) NOT NULL,
 Cliente varchar(50) NOT NULL,
 PagoTotal decimal NOT NULL,
-idDetalleFactura int not null,
-foreign key (idDetalleFactura) references DetalleFactura(idDetalleFactura)
+idDetalleFacturaPlato int,
+idDetalleFacturaBebida int
+foreign key (idDetalleFacturaPlato) references DetalleFacturaPlato(idDetalleFacturaPlato),
+foreign key (idDetalleFacturaBebida) references DetalleFacturaBebida(idDetalleFacturaBebida)
+on delete cascade
+on update cascade
 )
 
 create table Administracion(

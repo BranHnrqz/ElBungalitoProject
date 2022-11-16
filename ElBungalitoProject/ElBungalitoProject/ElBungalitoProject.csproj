@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -59,6 +59,12 @@
     </Compile>
     <Compile Include="Views\frmAdministrar.Designer.cs">
       <DependentUpon>frmAdministrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmBebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmBebidas.Designer.cs">
+      <DependentUpon>frmBebidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLogAdmin.cs">
       <SubType>Form</SubType>
@@ -72,7 +78,19 @@
     <Compile Include="Views\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Views\frmOrdenar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmOrdenar.Designer.cs">
+      <DependentUpon>frmOrdenar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmVerOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVerOrdenes.Designer.cs">
+      <DependentUpon>frmVerOrdenes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -84,8 +102,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\frmAdministrar.resx">
+      <DependentUpon>frmAdministrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmBebidas.resx">
+      <DependentUpon>frmBebidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLogAdmin.resx">
       <DependentUpon>frmLogAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmOrdenar.resx">
+      <DependentUpon>frmOrdenar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVerOrdenes.resx">
+      <DependentUpon>frmVerOrdenes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +132,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
+    <Folder Include="Negocio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

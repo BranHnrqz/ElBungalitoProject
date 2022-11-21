@@ -52,7 +52,7 @@ on update cascade
 )
 
 create table Orden(
-idOrden int primary key identity(1,1)not null,
+idOrden int primary key not null,
 Cliente varchar(50)
 )
 
@@ -84,10 +84,8 @@ on update cascade
 create table Factura(
 idFactura int primary key identity(1,1) NOT NULL,
 PagoTotal float NOT NULL,
-idDetalleFacturaPlato int,
-idDetalleFacturaBebida int
-foreign key (idDetalleFacturaPlato) references DetalleFacturaPlato(idDetalleFacturaPlato),
-foreign key (idDetalleFacturaBebida) references DetalleFacturaBebida(idDetalleFacturaBebida)
+Orden int
+foreign key (Orden) references Orden(idOrden)
 on delete cascade
 on update cascade
 )

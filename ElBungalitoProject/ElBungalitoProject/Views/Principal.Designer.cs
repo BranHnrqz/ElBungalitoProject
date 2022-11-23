@@ -82,7 +82,7 @@
             // 
             this.btnAdministrar.FlatAppearance.BorderSize = 0;
             this.btnAdministrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdministrar.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.btnAdministrar.Location = new System.Drawing.Point(867, 645);
             this.btnAdministrar.Name = "btnAdministrar";
@@ -90,10 +90,11 @@
             this.btnAdministrar.TabIndex = 4;
             this.btnAdministrar.Text = "Administrar";
             this.btnAdministrar.UseVisualStyleBackColor = true;
+            this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 690);
             this.ControlBox = false;
@@ -102,7 +103,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.Logo);
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Principal";

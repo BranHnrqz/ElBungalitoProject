@@ -67,6 +67,7 @@
     <Compile Include="Negocio\clsGestionPlato.cs" />
     <Compile Include="Negocio\clsGestionTipoBebida.cs" />
     <Compile Include="Negocio\clsGestionTipoPlato.cs" />
+    <Compile Include="Negocio\ClsLogin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Principal.cs">

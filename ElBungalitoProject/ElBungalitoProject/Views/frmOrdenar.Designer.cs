@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrdenar));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.grpOrdenComida = new System.Windows.Forms.GroupBox();
             this.dgvPlato = new System.Windows.Forms.DataGridView();
@@ -99,7 +99,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 915);
+            this.panel1.Size = new System.Drawing.Size(200, 749);
             this.panel1.TabIndex = 0;
             // 
             // grpOrdenComida
@@ -126,14 +126,14 @@
             // dgvPlato
             // 
             this.dgvPlato.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlato.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlato.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPlato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlato.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idEspecialidad,
@@ -158,41 +158,41 @@
             this.Orden.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.Orden.HeaderText = "Orden";
             this.Orden.Name = "Orden";
-            this.Orden.Width = 99;
+            this.Orden.Width = 96;
             // 
             // Especialidad
             // 
             this.Especialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.Especialidad.HeaderText = "Especialidad";
             this.Especialidad.Name = "Especialidad";
-            this.Especialidad.Width = 165;
+            this.Especialidad.Width = 160;
             // 
             // PrecioUnitario
             // 
             this.PrecioUnitario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.PrecioUnitario.HeaderText = "Precio Unitario";
             this.PrecioUnitario.Name = "PrecioUnitario";
-            this.PrecioUnitario.Width = 171;
+            this.PrecioUnitario.Width = 162;
             // 
             // Cantidad
             // 
             this.Cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Width = 127;
+            this.Cantidad.Width = 123;
             // 
             // SubTotal
             // 
             this.SubTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.SubTotal.HeaderText = "SubTotal";
             this.SubTotal.Name = "SubTotal";
-            this.SubTotal.Width = 126;
+            this.SubTotal.Width = 123;
             // 
             // numCantidadPlato
             // 
             this.numCantidadPlato.Location = new System.Drawing.Point(169, 220);
             this.numCantidadPlato.Name = "numCantidadPlato";
-            this.numCantidadPlato.Size = new System.Drawing.Size(74, 32);
+            this.numCantidadPlato.Size = new System.Drawing.Size(74, 31);
             this.numCantidadPlato.TabIndex = 11;
             this.numCantidadPlato.ValueChanged += new System.EventHandler(this.numCantidadPlato_ValueChanged);
             // 
@@ -201,7 +201,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(20, 54);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 24);
+            this.label6.Size = new System.Drawing.Size(137, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Tipo de plato";
             // 
@@ -210,7 +210,7 @@
             this.cmbTipoPlato.FormattingEnabled = true;
             this.cmbTipoPlato.Location = new System.Drawing.Point(169, 51);
             this.cmbTipoPlato.Name = "cmbTipoPlato";
-            this.cmbTipoPlato.Size = new System.Drawing.Size(293, 32);
+            this.cmbTipoPlato.Size = new System.Drawing.Size(293, 33);
             this.cmbTipoPlato.TabIndex = 9;
             this.cmbTipoPlato.SelectedIndexChanged += new System.EventHandler(this.cmbTipoPlato_SelectedIndexChanged);
             // 
@@ -219,7 +219,7 @@
             this.lbCantidadPlato.AutoSize = true;
             this.lbCantidadPlato.Location = new System.Drawing.Point(59, 222);
             this.lbCantidadPlato.Name = "lbCantidadPlato";
-            this.lbCantidadPlato.Size = new System.Drawing.Size(102, 24);
+            this.lbCantidadPlato.Size = new System.Drawing.Size(98, 25);
             this.lbCantidadPlato.TabIndex = 7;
             this.lbCantidadPlato.Text = "Cantidad";
             // 
@@ -228,7 +228,7 @@
             this.lbPrecioPlato.AutoSize = true;
             this.lbPrecioPlato.Location = new System.Drawing.Point(263, 222);
             this.lbPrecioPlato.Name = "lbPrecioPlato";
-            this.lbPrecioPlato.Size = new System.Drawing.Size(76, 24);
+            this.lbPrecioPlato.Size = new System.Drawing.Size(73, 25);
             this.lbPrecioPlato.TabIndex = 6;
             this.lbPrecioPlato.Text = "Precio";
             // 
@@ -237,7 +237,7 @@
             this.lbEspecialidadPlato.AutoSize = true;
             this.lbEspecialidadPlato.Location = new System.Drawing.Point(23, 168);
             this.lbEspecialidadPlato.Name = "lbEspecialidadPlato";
-            this.lbEspecialidadPlato.Size = new System.Drawing.Size(140, 24);
+            this.lbEspecialidadPlato.Size = new System.Drawing.Size(135, 25);
             this.lbEspecialidadPlato.TabIndex = 5;
             this.lbEspecialidadPlato.Text = "Especialidad";
             // 
@@ -246,7 +246,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(87, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 24);
+            this.label2.Size = new System.Drawing.Size(71, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Orden";
             // 
@@ -267,7 +267,7 @@
             " "});
             this.cmbEspecialidadPlato.Location = new System.Drawing.Point(169, 164);
             this.cmbEspecialidadPlato.Name = "cmbEspecialidadPlato";
-            this.cmbEspecialidadPlato.Size = new System.Drawing.Size(293, 32);
+            this.cmbEspecialidadPlato.Size = new System.Drawing.Size(293, 33);
             this.cmbEspecialidadPlato.TabIndex = 2;
             this.cmbEspecialidadPlato.SelectedIndexChanged += new System.EventHandler(this.cmbEspecialidadPlato_SelectedIndexChanged);
             // 
@@ -278,7 +278,7 @@
             "ola"});
             this.cmbPlato.Location = new System.Drawing.Point(169, 106);
             this.cmbPlato.Name = "cmbPlato";
-            this.cmbPlato.Size = new System.Drawing.Size(293, 32);
+            this.cmbPlato.Size = new System.Drawing.Size(293, 33);
             this.cmbPlato.TabIndex = 1;
             this.cmbPlato.SelectedIndexChanged += new System.EventHandler(this.cmbPlato_SelectedIndexChanged);
             // 
@@ -286,7 +286,7 @@
             // 
             this.txtSubTotalPlato.Location = new System.Drawing.Point(345, 219);
             this.txtSubTotalPlato.Name = "txtSubTotalPlato";
-            this.txtSubTotalPlato.Size = new System.Drawing.Size(117, 32);
+            this.txtSubTotalPlato.Size = new System.Drawing.Size(117, 31);
             this.txtSubTotalPlato.TabIndex = 0;
             // 
             // grpOrdenBebida
@@ -314,14 +314,14 @@
             // dgvBebida
             // 
             this.dgvBebida.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBebida.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBebida.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBebida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBebida.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -346,41 +346,41 @@
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn2.HeaderText = "Orden";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 99;
+            this.dataGridViewTextBoxColumn2.Width = 96;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn3.HeaderText = "Sabor";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 96;
+            this.dataGridViewTextBoxColumn3.Width = 94;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn4.HeaderText = "Precio Unitario";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 171;
+            this.dataGridViewTextBoxColumn4.Width = 162;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn5.HeaderText = "Cantidad";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 127;
+            this.dataGridViewTextBoxColumn5.Width = 123;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn6.HeaderText = "SubTotal";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 126;
+            this.dataGridViewTextBoxColumn6.Width = 123;
             // 
             // numCantidadBebida
             // 
             this.numCantidadBebida.Location = new System.Drawing.Point(169, 220);
             this.numCantidadBebida.Name = "numCantidadBebida";
-            this.numCantidadBebida.Size = new System.Drawing.Size(74, 32);
+            this.numCantidadBebida.Size = new System.Drawing.Size(74, 31);
             this.numCantidadBebida.TabIndex = 11;
             this.numCantidadBebida.ValueChanged += new System.EventHandler(this.numCantidadBebida_ValueChanged);
             // 
@@ -389,7 +389,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(4, 54);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 24);
+            this.label7.Size = new System.Drawing.Size(155, 25);
             this.label7.TabIndex = 10;
             this.label7.Text = "Tipo de bebida";
             // 
@@ -398,7 +398,7 @@
             this.cmbTipoBebida.FormattingEnabled = true;
             this.cmbTipoBebida.Location = new System.Drawing.Point(169, 51);
             this.cmbTipoBebida.Name = "cmbTipoBebida";
-            this.cmbTipoBebida.Size = new System.Drawing.Size(293, 32);
+            this.cmbTipoBebida.Size = new System.Drawing.Size(293, 33);
             this.cmbTipoBebida.TabIndex = 9;
             this.cmbTipoBebida.SelectedIndexChanged += new System.EventHandler(this.cmbTipoBebida_SelectedIndexChanged);
             // 
@@ -407,7 +407,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(59, 222);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 24);
+            this.label8.Size = new System.Drawing.Size(98, 25);
             this.label8.TabIndex = 7;
             this.label8.Text = "Cantidad";
             // 
@@ -416,7 +416,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(263, 222);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 24);
+            this.label9.Size = new System.Drawing.Size(73, 25);
             this.label9.TabIndex = 6;
             this.label9.Text = "Precio";
             // 
@@ -425,7 +425,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(23, 168);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 24);
+            this.label10.Size = new System.Drawing.Size(135, 25);
             this.label10.TabIndex = 5;
             this.label10.Text = "Especialidad";
             // 
@@ -434,7 +434,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(87, 109);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 24);
+            this.label11.Size = new System.Drawing.Size(71, 25);
             this.label11.TabIndex = 4;
             this.label11.Text = "Orden";
             // 
@@ -453,7 +453,7 @@
             this.cmbEspecialidadBebida.FormattingEnabled = true;
             this.cmbEspecialidadBebida.Location = new System.Drawing.Point(169, 164);
             this.cmbEspecialidadBebida.Name = "cmbEspecialidadBebida";
-            this.cmbEspecialidadBebida.Size = new System.Drawing.Size(293, 32);
+            this.cmbEspecialidadBebida.Size = new System.Drawing.Size(293, 33);
             this.cmbEspecialidadBebida.TabIndex = 2;
             this.cmbEspecialidadBebida.SelectedIndexChanged += new System.EventHandler(this.cmbEspecialidadBebida_SelectedIndexChanged);
             // 
@@ -462,7 +462,7 @@
             this.cmbBebida.FormattingEnabled = true;
             this.cmbBebida.Location = new System.Drawing.Point(169, 106);
             this.cmbBebida.Name = "cmbBebida";
-            this.cmbBebida.Size = new System.Drawing.Size(293, 32);
+            this.cmbBebida.Size = new System.Drawing.Size(293, 33);
             this.cmbBebida.TabIndex = 1;
             this.cmbBebida.SelectedIndexChanged += new System.EventHandler(this.cmbBebida_SelectedIndexChanged);
             // 
@@ -470,7 +470,7 @@
             // 
             this.txtSubTotalBebida.Location = new System.Drawing.Point(345, 219);
             this.txtSubTotalBebida.Name = "txtSubTotalBebida";
-            this.txtSubTotalBebida.Size = new System.Drawing.Size(117, 32);
+            this.txtSubTotalBebida.Size = new System.Drawing.Size(117, 31);
             this.txtSubTotalBebida.TabIndex = 0;
             // 
             // btnVender
@@ -499,7 +499,7 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(120, 89);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(152, 32);
+            this.txtNombre.Size = new System.Drawing.Size(152, 31);
             this.txtNombre.TabIndex = 16;
             // 
             // label3
@@ -507,7 +507,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(22, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 24);
+            this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 17;
             this.label3.Text = "Nombre";
             // 
@@ -516,7 +516,7 @@
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.BackColor = System.Drawing.Color.Red;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(1194, 35);
+            this.btnSalir.Location = new System.Drawing.Point(1045, 35);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(67, 34);
             this.btnSalir.TabIndex = 10;
@@ -529,7 +529,7 @@
             this.btnMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMenu.BackColor = System.Drawing.Color.Teal;
             this.btnMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenu.Location = new System.Drawing.Point(1109, 35);
+            this.btnMenu.Location = new System.Drawing.Point(960, 35);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(98, 34);
             this.btnMenu.TabIndex = 9;
@@ -548,10 +548,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 43);
+            this.label1.Size = new System.Drawing.Size(155, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ordenar";
             // 
@@ -568,14 +568,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1319, 135);
+            this.panel3.Size = new System.Drawing.Size(1170, 135);
             this.panel3.TabIndex = 18;
             // 
             // txtNumOrden
             // 
             this.txtNumOrden.Location = new System.Drawing.Point(1109, 89);
             this.txtNumOrden.Name = "txtNumOrden";
-            this.txtNumOrden.Size = new System.Drawing.Size(152, 32);
+            this.txtNumOrden.Size = new System.Drawing.Size(152, 31);
             this.txtNumOrden.TabIndex = 16;
             // 
             // panelFill
@@ -589,7 +589,7 @@
             this.panelFill.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFill.Location = new System.Drawing.Point(200, 135);
             this.panelFill.Name = "panelFill";
-            this.panelFill.Size = new System.Drawing.Size(1319, 780);
+            this.panelFill.Size = new System.Drawing.Size(1170, 614);
             this.panelFill.TabIndex = 20;
             // 
             // label4
@@ -597,7 +597,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(43, 734);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 24);
+            this.label4.Size = new System.Drawing.Size(139, 25);
             this.label4.TabIndex = 10;
             this.label4.Text = "Total a pagar";
             // 
@@ -605,19 +605,19 @@
             // 
             this.txtTotalPagar.Location = new System.Drawing.Point(208, 731);
             this.txtTotalPagar.Name = "txtTotalPagar";
-            this.txtTotalPagar.Size = new System.Drawing.Size(117, 32);
+            this.txtTotalPagar.Size = new System.Drawing.Size(117, 31);
             this.txtTotalPagar.TabIndex = 0;
             // 
             // frmOrdenar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1519, 915);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.ControlBox = false;
             this.Controls.Add(this.panelFill);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmOrdenar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

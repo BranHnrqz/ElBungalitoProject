@@ -11,8 +11,7 @@ namespace ElBungalitoProject.Datos
 {
     internal class clsConexion
     {
-        private SqlConnection cn = new SqlConnection("Data Source=LAPTOP-9EEEJEMK;" +
-       "Initial Catalog=Bungalito; Integrated Security=SSPI");
+        private SqlConnection cn = new SqlConnection("Data Source=.;Initial Catalog=Bungalito;Integrated Security=True");
         public SqlConnection AbrirConexion()
         {
             try

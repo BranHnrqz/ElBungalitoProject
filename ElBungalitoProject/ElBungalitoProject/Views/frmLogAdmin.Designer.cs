@@ -61,14 +61,15 @@
             this.btnIngresar.TabIndex = 1;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 34F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 34F);
             this.label1.Location = new System.Drawing.Point(181, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(498, 54);
+            this.label1.Size = new System.Drawing.Size(452, 53);
             this.label1.TabIndex = 2;
             this.label1.Text = "Login Administración";
             // 
@@ -77,7 +78,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(240, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 24);
+            this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuario:";
             // 
@@ -86,7 +87,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(202, 197);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 24);
+            this.label3.Size = new System.Drawing.Size(129, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Contraseña:";
             // 
@@ -94,14 +95,14 @@
             // 
             this.txtUsuario.Location = new System.Drawing.Point(349, 146);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(377, 32);
+            this.txtUsuario.Size = new System.Drawing.Size(377, 31);
             this.txtUsuario.TabIndex = 5;
             // 
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(349, 193);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(377, 32);
+            this.txtPass.Size = new System.Drawing.Size(377, 31);
             this.txtPass.TabIndex = 6;
             // 
             // btnPrincipal
@@ -153,7 +154,7 @@
             // 
             // frmLogAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 388);
             this.ControlBox = false;
@@ -168,7 +169,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmLogAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

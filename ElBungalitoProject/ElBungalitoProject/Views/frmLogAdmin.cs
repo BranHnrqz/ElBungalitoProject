@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElBungalitoProject.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace ElBungalitoProject.Views
 {
     public partial class frmLogAdmin : Form
     {
+        ClsLogin data = new ClsLogin();
         public frmLogAdmin()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace ElBungalitoProject.Views
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            data.Login(txtUsuario.Text, txtPass.Text);
         }
     }
 }

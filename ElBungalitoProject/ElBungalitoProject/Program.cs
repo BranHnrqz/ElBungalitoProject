@@ -17,7 +17,7 @@ namespace ElBungalitoProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmOrdenar());
+            Application.Run(new Principal());
         }
     }
 }

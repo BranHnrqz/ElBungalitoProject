@@ -16,5 +16,12 @@ namespace ElBungalitoProject.Views
         {
             InitializeComponent();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Principal principal = new Principal();
+            principal.Show();
+        }
     }
 }

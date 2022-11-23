@@ -25,14 +25,14 @@ namespace ElBungalitoProject.Datos
                 cmd.CommandType = CommandType.Text;
                 read = cmd.ExecuteReader();
                 dt.Load(read);
-                cn.CerrarConexion();
-                return dt;
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show(Convert.ToString(ex), "Error no se puede obtener la tabla TipoPlato");
+                MessageBox.Show(Convert.ToString(ex), "Error no se puede obtener la tabla Plato");
             }
-            return null;
+            cn.CerrarConexion();
+            return dt;
         }
     }
 }

@@ -27,3 +27,7 @@ C:\Users\septi\OneDrive\Escritorio\ElBungalitoProject\ElBungalitoProject\ElBunga
 C:\Users\septi\OneDrive\Escritorio\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.CoreCompileInputs.cache
 C:\Users\septi\OneDrive\Escritorio\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.exe
 C:\Users\septi\OneDrive\Escritorio\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.pdb
+C:\Users\septi\OneDrive\Documentos\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.AssemblyReference.cache
+C:\Users\septi\OneDrive\Documentos\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\septi\OneDrive\Documentos\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.exe
+C:\Users\septi\OneDrive\Documentos\GitHub\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\ElBungalitoProject\obj\Debug\ElBungalitoProject.pdb

@@ -21,7 +21,7 @@ namespace ElBungalitoProject.Negocio
 
         public Tuple <double, string> ViewItemsDetalle(string where)
         {
-            return detallePlato.SelectItemsDetalleWhere(where);
+            return detallePlato.SelectItemsDetallePlatoWhere(where);
         }
     }
 }

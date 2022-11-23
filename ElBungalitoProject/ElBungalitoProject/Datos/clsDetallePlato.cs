@@ -26,17 +26,17 @@ namespace ElBungalitoProject.Datos
                 cmd.CommandType = CommandType.Text;
                 read = cmd.ExecuteReader();
                 dt.Load(read);
-                cn.CerrarConexion();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(Convert.ToString(ex), "Error no se puede obtener la tabla DetallePlato");
             }
+            cn.CerrarConexion();
             return dt;
         }
 
-        public Tuple<double, string> SelectItemsDetalleWhere(string where)
+        public Tuple<double, string> SelectItemsDetallePlatoWhere(string where)
         {
 
             double precio = 0;

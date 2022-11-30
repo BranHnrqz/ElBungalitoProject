@@ -99,7 +99,10 @@ namespace ElBungalitoProject.Views
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Principal principal = new Principal();
+            principal.Show();
+
         }
 
         //Código para los platillos
@@ -353,6 +356,13 @@ namespace ElBungalitoProject.Views
             {
                 MessageBox.Show("Tiene que añadir almenos un plato o una bebida");
             }
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMenu frmMenu= new frmMenu();
+            frmMenu.Show();
         }
     }
 }

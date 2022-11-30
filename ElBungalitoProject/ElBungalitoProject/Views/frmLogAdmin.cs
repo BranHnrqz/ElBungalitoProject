@@ -21,12 +21,27 @@ namespace ElBungalitoProject.Views
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Principal principal = new Principal();
+            principal.Show();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             data.Login(txtUsuario.Text, txtPass.Text);
+        }
+
+        private void frmLogAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.Show();
+            this.Hide();
         }
     }
 }

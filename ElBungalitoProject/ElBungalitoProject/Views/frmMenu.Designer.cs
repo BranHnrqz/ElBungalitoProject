@@ -121,7 +121,7 @@
             // 
             // btnBebidas
             // 
-            this.btnBebidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBebidas.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnBebidas.ForeColor = System.Drawing.Color.White;
             this.btnBebidas.Location = new System.Drawing.Point(537, 39);
             this.btnBebidas.Name = "btnBebidas";
@@ -129,6 +129,7 @@
             this.btnBebidas.TabIndex = 7;
             this.btnBebidas.Text = "Bebidas";
             this.btnBebidas.UseVisualStyleBackColor = false;
+            this.btnBebidas.Click += new System.EventHandler(this.btnBebidas_Click);
             // 
             // panel3
             // 
@@ -141,7 +142,7 @@
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.BackColor = System.Drawing.Color.Teal;
+            this.btnOrdenar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnOrdenar.ForeColor = System.Drawing.Color.White;
             this.btnOrdenar.Location = new System.Drawing.Point(648, 39);
             this.btnOrdenar.Name = "btnOrdenar";
@@ -149,6 +150,7 @@
             this.btnOrdenar.TabIndex = 10;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = false;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // frmMenu
             // 

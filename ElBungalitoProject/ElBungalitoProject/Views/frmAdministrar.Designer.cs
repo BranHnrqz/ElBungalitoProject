@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdministrar));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.lblAdmin = new System.Windows.Forms.Label();
             this.grbComida = new System.Windows.Forms.GroupBox();
+            this.btnEditarPlato = new System.Windows.Forms.Button();
+            this.btnEliminarPlato = new System.Windows.Forms.Button();
+            this.btnAgregarPlato = new System.Windows.Forms.Button();
             this.dgvPlatos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dgvBebidas = new System.Windows.Forms.DataGridView();
-            this.btnAgregarPlato = new System.Windows.Forms.Button();
-            this.btnAgregarBebida = new System.Windows.Forms.Button();
-            this.btnEliminarPlato = new System.Windows.Forms.Button();
-            this.btnEliminarBebida = new System.Windows.Forms.Button();
-            this.btnEditarPlato = new System.Windows.Forms.Button();
             this.btnEditarBebida = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
+            this.btnEliminarBebida = new System.Windows.Forms.Button();
+            this.btnAgregarBebida = new System.Windows.Forms.Button();
+            this.dgvBebidas = new System.Windows.Forms.DataGridView();
             this.btnMenu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnOrdenes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.grbComida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatos)).BeginInit();
@@ -61,6 +61,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 852);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Red;
+            this.btnCerrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCerrar.Location = new System.Drawing.Point(144, 26);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(87, 36);
+            this.btnCerrar.TabIndex = 8;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblAdmin
             // 
@@ -84,6 +97,42 @@
             this.grbComida.TabStop = false;
             this.grbComida.Text = "Platos";
             // 
+            // btnEditarPlato
+            // 
+            this.btnEditarPlato.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnEditarPlato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPlato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditarPlato.Location = new System.Drawing.Point(247, 314);
+            this.btnEditarPlato.Name = "btnEditarPlato";
+            this.btnEditarPlato.Size = new System.Drawing.Size(87, 36);
+            this.btnEditarPlato.TabIndex = 2;
+            this.btnEditarPlato.Text = "Editar";
+            this.btnEditarPlato.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminarPlato
+            // 
+            this.btnEliminarPlato.BackColor = System.Drawing.Color.Red;
+            this.btnEliminarPlato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarPlato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminarPlato.Location = new System.Drawing.Point(130, 314);
+            this.btnEliminarPlato.Name = "btnEliminarPlato";
+            this.btnEliminarPlato.Size = new System.Drawing.Size(87, 36);
+            this.btnEliminarPlato.TabIndex = 1;
+            this.btnEliminarPlato.Text = "Eliminar";
+            this.btnEliminarPlato.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregarPlato
+            // 
+            this.btnAgregarPlato.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAgregarPlato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarPlato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregarPlato.Location = new System.Drawing.Point(6, 314);
+            this.btnAgregarPlato.Name = "btnAgregarPlato";
+            this.btnAgregarPlato.Size = new System.Drawing.Size(87, 36);
+            this.btnAgregarPlato.TabIndex = 0;
+            this.btnAgregarPlato.Text = "Agregar";
+            this.btnAgregarPlato.UseVisualStyleBackColor = false;
+            // 
             // dgvPlatos
             // 
             this.dgvPlatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -104,49 +153,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bebidas";
             // 
-            // dgvBebidas
+            // btnEditarBebida
             // 
-            this.dgvBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBebidas.Location = new System.Drawing.Point(406, 464);
-            this.dgvBebidas.Name = "dgvBebidas";
-            this.dgvBebidas.Size = new System.Drawing.Size(340, 289);
-            this.dgvBebidas.TabIndex = 5;
-            // 
-            // btnAgregarPlato
-            // 
-            this.btnAgregarPlato.BackColor = System.Drawing.Color.Green;
-            this.btnAgregarPlato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarPlato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregarPlato.Location = new System.Drawing.Point(6, 314);
-            this.btnAgregarPlato.Name = "btnAgregarPlato";
-            this.btnAgregarPlato.Size = new System.Drawing.Size(87, 36);
-            this.btnAgregarPlato.TabIndex = 0;
-            this.btnAgregarPlato.Text = "Agregar";
-            this.btnAgregarPlato.UseVisualStyleBackColor = false;
-            // 
-            // btnAgregarBebida
-            // 
-            this.btnAgregarBebida.BackColor = System.Drawing.Color.Green;
-            this.btnAgregarBebida.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarBebida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregarBebida.Location = new System.Drawing.Point(6, 314);
-            this.btnAgregarBebida.Name = "btnAgregarBebida";
-            this.btnAgregarBebida.Size = new System.Drawing.Size(87, 36);
-            this.btnAgregarBebida.TabIndex = 1;
-            this.btnAgregarBebida.Text = "Agregar";
-            this.btnAgregarBebida.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminarPlato
-            // 
-            this.btnEliminarPlato.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarPlato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarPlato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminarPlato.Location = new System.Drawing.Point(130, 314);
-            this.btnEliminarPlato.Name = "btnEliminarPlato";
-            this.btnEliminarPlato.Size = new System.Drawing.Size(87, 36);
-            this.btnEliminarPlato.TabIndex = 1;
-            this.btnEliminarPlato.Text = "Eliminar";
-            this.btnEliminarPlato.UseVisualStyleBackColor = false;
+            this.btnEditarBebida.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnEditarBebida.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarBebida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditarBebida.Location = new System.Drawing.Point(247, 314);
+            this.btnEditarBebida.Name = "btnEditarBebida";
+            this.btnEditarBebida.Size = new System.Drawing.Size(87, 36);
+            this.btnEditarBebida.TabIndex = 3;
+            this.btnEditarBebida.Text = "Editar";
+            this.btnEditarBebida.UseVisualStyleBackColor = false;
             // 
             // btnEliminarBebida
             // 
@@ -160,45 +177,29 @@
             this.btnEliminarBebida.Text = "Eliminar";
             this.btnEliminarBebida.UseVisualStyleBackColor = false;
             // 
-            // btnEditarPlato
+            // btnAgregarBebida
             // 
-            this.btnEditarPlato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnEditarPlato.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarPlato.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEditarPlato.Location = new System.Drawing.Point(247, 314);
-            this.btnEditarPlato.Name = "btnEditarPlato";
-            this.btnEditarPlato.Size = new System.Drawing.Size(87, 36);
-            this.btnEditarPlato.TabIndex = 2;
-            this.btnEditarPlato.Text = "Editar";
-            this.btnEditarPlato.UseVisualStyleBackColor = false;
+            this.btnAgregarBebida.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAgregarBebida.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarBebida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregarBebida.Location = new System.Drawing.Point(6, 314);
+            this.btnAgregarBebida.Name = "btnAgregarBebida";
+            this.btnAgregarBebida.Size = new System.Drawing.Size(87, 36);
+            this.btnAgregarBebida.TabIndex = 1;
+            this.btnAgregarBebida.Text = "Agregar";
+            this.btnAgregarBebida.UseVisualStyleBackColor = false;
             // 
-            // btnEditarBebida
+            // dgvBebidas
             // 
-            this.btnEditarBebida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnEditarBebida.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarBebida.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEditarBebida.Location = new System.Drawing.Point(247, 314);
-            this.btnEditarBebida.Name = "btnEditarBebida";
-            this.btnEditarBebida.Size = new System.Drawing.Size(87, 36);
-            this.btnEditarBebida.TabIndex = 3;
-            this.btnEditarBebida.Text = "Editar";
-            this.btnEditarBebida.UseVisualStyleBackColor = false;
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnInicio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnInicio.Location = new System.Drawing.Point(566, 25);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(87, 36);
-            this.btnInicio.TabIndex = 3;
-            this.btnInicio.Text = "Inicio";
-            this.btnInicio.UseVisualStyleBackColor = false;
+            this.dgvBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBebidas.Location = new System.Drawing.Point(406, 464);
+            this.dgvBebidas.Name = "dgvBebidas";
+            this.dgvBebidas.Size = new System.Drawing.Size(340, 289);
+            this.dgvBebidas.TabIndex = 5;
             // 
             // btnMenu
             // 
-            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnMenu.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMenu.Location = new System.Drawing.Point(659, 25);
@@ -207,6 +208,7 @@
             this.btnMenu.TabIndex = 6;
             this.btnMenu.Text = "Menú";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panel2
             // 
@@ -217,17 +219,18 @@
             this.panel2.Size = new System.Drawing.Size(47, 45);
             this.panel2.TabIndex = 7;
             // 
-            // btnCerrar
+            // btnOrdenes
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Red;
-            this.btnCerrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCerrar.Location = new System.Drawing.Point(144, 26);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(87, 36);
-            this.btnCerrar.TabIndex = 8;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnOrdenes.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnOrdenes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnOrdenes.Location = new System.Drawing.Point(489, 25);
+            this.btnOrdenes.Name = "btnOrdenes";
+            this.btnOrdenes.Size = new System.Drawing.Size(144, 36);
+            this.btnOrdenes.TabIndex = 8;
+            this.btnOrdenes.Text = "Ver Órdenes";
+            this.btnOrdenes.UseVisualStyleBackColor = false;
+            this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
             // frmAdministrar
             // 
@@ -235,9 +238,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 833);
             this.ControlBox = false;
+            this.Controls.Add(this.btnOrdenes);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnMenu);
-            this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.dgvBebidas);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvPlatos);
@@ -245,7 +248,7 @@
             this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmAdministrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdministrar";
@@ -273,9 +276,9 @@
         private System.Windows.Forms.Button btnEliminarBebida;
         private System.Windows.Forms.Button btnAgregarBebida;
         private System.Windows.Forms.DataGridView dgvBebidas;
-        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnOrdenes;
     }
 }

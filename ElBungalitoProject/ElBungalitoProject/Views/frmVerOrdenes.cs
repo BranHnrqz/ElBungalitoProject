@@ -16,5 +16,19 @@ namespace ElBungalitoProject.Views
         {
             InitializeComponent();
         }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmAdministrar frm = new frmAdministrar();
+            frm.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Principal principal = new Principal();
+            principal.Show();
+        }
     }
 }

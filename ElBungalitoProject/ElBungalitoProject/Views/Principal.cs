@@ -32,8 +32,14 @@ namespace ElBungalitoProject
 
         private void btnAdministrar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmLogAdmin op = new frmLogAdmin();
             op.Show();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -36,7 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.btnPrincipal = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,7 +52,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.Green;
+            this.btnIngresar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnIngresar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnIngresar.Location = new System.Drawing.Point(619, 231);
             this.btnIngresar.Name = "btnIngresar";
@@ -105,31 +104,19 @@
             this.txtPass.Size = new System.Drawing.Size(377, 31);
             this.txtPass.TabIndex = 6;
             // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrincipal.FlatAppearance.BorderSize = 0;
-            this.btnPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrincipal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnPrincipal.Location = new System.Drawing.Point(190, 332);
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(245, 33);
-            this.btnPrincipal.TabIndex = 7;
-            this.btnPrincipal.Text = "Ir a Ventana Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = false;
-            // 
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Transparent;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnMenu.Location = new System.Drawing.Point(456, 332);
+            this.btnMenu.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnMenu.Location = new System.Drawing.Point(317, 339);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(270, 33);
             this.btnMenu.TabIndex = 8;
             this.btnMenu.Text = "Ir al Menú";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnCerrar
             // 
@@ -161,7 +148,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnMenu);
-            this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label3);
@@ -174,6 +160,7 @@
             this.Name = "frmLogAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogAdmin";
+            this.Load += new System.EventHandler(this.frmLogAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,7 +175,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Button btnPrincipal;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Panel panel2;

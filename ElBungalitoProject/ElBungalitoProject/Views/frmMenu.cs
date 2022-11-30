@@ -23,5 +23,19 @@ namespace ElBungalitoProject.Views
             Principal principal = new Principal();
             principal.Show();
         }
+
+        private void btnBebidas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmBebidas frmBebidas = new frmBebidas();
+            frmBebidas.Show();
+        }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmOrdenar frmOrdenar = new frmOrdenar();
+            frmOrdenar.Show();
+        }
     }
 }

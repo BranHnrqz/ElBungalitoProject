@@ -80,16 +80,17 @@
             // 
             // btnAdministrar
             // 
+            this.btnAdministrar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnAdministrar.FlatAppearance.BorderSize = 0;
             this.btnAdministrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministrar.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btnAdministrar.Location = new System.Drawing.Point(867, 645);
+            this.btnAdministrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdministrar.Location = new System.Drawing.Point(859, 645);
             this.btnAdministrar.Name = "btnAdministrar";
             this.btnAdministrar.Size = new System.Drawing.Size(93, 37);
             this.btnAdministrar.TabIndex = 4;
             this.btnAdministrar.Text = "Administrar";
-            this.btnAdministrar.UseVisualStyleBackColor = true;
+            this.btnAdministrar.UseVisualStyleBackColor = false;
             this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
             // 
             // Principal
@@ -109,6 +110,7 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "El Bungalito Principal";
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.ResumeLayout(false);
 
         }

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBebidas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvBebidas = new System.Windows.Forms.DataGridView();
@@ -38,7 +39,6 @@
             this.cmbFiltroBebida = new System.Windows.Forms.ComboBox();
             this.btnOrdenar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBebidas)).BeginInit();
@@ -60,6 +60,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(226, 497);
             this.panel2.TabIndex = 1;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.Red;
+            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCerrar.Location = new System.Drawing.Point(137, 13);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(77, 38);
+            this.btnCerrar.TabIndex = 9;
+            this.btnCerrar.Text = "X";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label1
             // 
@@ -107,7 +119,7 @@
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnOrdenar.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnOrdenar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnOrdenar.Location = new System.Drawing.Point(597, 29);
             this.btnOrdenar.Name = "btnOrdenar";
@@ -115,6 +127,7 @@
             this.btnOrdenar.TabIndex = 7;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = false;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // button1
             // 
@@ -126,20 +139,9 @@
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Red;
-            this.btnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCerrar.Location = new System.Drawing.Point(137, 13);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(77, 38);
-            this.btnCerrar.TabIndex = 9;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            // 
             // btnMenu
             // 
-            this.btnMenu.BackColor = System.Drawing.Color.Teal;
+            this.btnMenu.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnMenu.Location = new System.Drawing.Point(508, 28);
             this.btnMenu.Name = "btnMenu";
@@ -147,6 +149,7 @@
             this.btnMenu.TabIndex = 9;
             this.btnMenu.Text = "Menú";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // frmBebidas
             // 
@@ -165,7 +168,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmBebidas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmBebidas";

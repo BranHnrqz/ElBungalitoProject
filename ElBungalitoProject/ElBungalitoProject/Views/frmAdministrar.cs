@@ -16,5 +16,26 @@ namespace ElBungalitoProject.Views
         {
             InitializeComponent();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMenu frmMenu = new frmMenu();
+            frmMenu.Show();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Principal principal = new Principal();
+            principal.Show();
+        }
+
+        private void btnOrdenes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmVerOrdenes frmVerOrdenes = new frmVerOrdenes();
+            frmVerOrdenes.Show();
+        }
     }
 }

@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrdenar));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.grpOrdenComida = new System.Windows.Forms.GroupBox();
+            this.btnDeletePlato = new System.Windows.Forms.Button();
             this.dgvPlato = new System.Windows.Forms.DataGridView();
             this.idEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +53,7 @@
             this.cmbPlato = new System.Windows.Forms.ComboBox();
             this.txtSubTotalPlato = new System.Windows.Forms.TextBox();
             this.grpOrdenBebida = new System.Windows.Forms.GroupBox();
+            this.btnDeleteBebida = new System.Windows.Forms.Button();
             this.dgvBebida = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -104,6 +106,7 @@
             // 
             // grpOrdenComida
             // 
+            this.grpOrdenComida.Controls.Add(this.btnDeletePlato);
             this.grpOrdenComida.Controls.Add(this.dgvPlato);
             this.grpOrdenComida.Controls.Add(this.numCantidadPlato);
             this.grpOrdenComida.Controls.Add(this.label6);
@@ -118,22 +121,33 @@
             this.grpOrdenComida.Controls.Add(this.txtSubTotalPlato);
             this.grpOrdenComida.Location = new System.Drawing.Point(39, 17);
             this.grpOrdenComida.Name = "grpOrdenComida";
-            this.grpOrdenComida.Size = new System.Drawing.Size(1250, 341);
+            this.grpOrdenComida.Size = new System.Drawing.Size(1250, 356);
             this.grpOrdenComida.TabIndex = 3;
             this.grpOrdenComida.TabStop = false;
             this.grpOrdenComida.Text = "Ordenar Plato";
             // 
+            // btnDeletePlato
+            // 
+            this.btnDeletePlato.ForeColor = System.Drawing.Color.Red;
+            this.btnDeletePlato.Location = new System.Drawing.Point(503, 316);
+            this.btnDeletePlato.Name = "btnDeletePlato";
+            this.btnDeletePlato.Size = new System.Drawing.Size(195, 34);
+            this.btnDeletePlato.TabIndex = 15;
+            this.btnDeletePlato.Text = "Eliminar";
+            this.btnDeletePlato.UseVisualStyleBackColor = true;
+            this.btnDeletePlato.Click += new System.EventHandler(this.btnDeletePlato_Click);
+            // 
             // dgvPlato
             // 
             this.dgvPlato.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlato.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlato.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPlato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlato.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idEspecialidad,
@@ -291,6 +305,7 @@
             // 
             // grpOrdenBebida
             // 
+            this.grpOrdenBebida.Controls.Add(this.btnDeleteBebida);
             this.grpOrdenBebida.Controls.Add(this.dgvBebida);
             this.grpOrdenBebida.Controls.Add(this.numCantidadBebida);
             this.grpOrdenBebida.Controls.Add(this.label7);
@@ -303,25 +318,36 @@
             this.grpOrdenBebida.Controls.Add(this.cmbEspecialidadBebida);
             this.grpOrdenBebida.Controls.Add(this.cmbBebida);
             this.grpOrdenBebida.Controls.Add(this.txtSubTotalBebida);
-            this.grpOrdenBebida.Location = new System.Drawing.Point(39, 364);
+            this.grpOrdenBebida.Location = new System.Drawing.Point(39, 388);
             this.grpOrdenBebida.Name = "grpOrdenBebida";
-            this.grpOrdenBebida.Size = new System.Drawing.Size(1250, 341);
+            this.grpOrdenBebida.Size = new System.Drawing.Size(1250, 358);
             this.grpOrdenBebida.TabIndex = 12;
             this.grpOrdenBebida.TabStop = false;
             this.grpOrdenBebida.Tag = "";
             this.grpOrdenBebida.Text = "Ordenar Bebida";
             // 
+            // btnDeleteBebida
+            // 
+            this.btnDeleteBebida.ForeColor = System.Drawing.Color.Red;
+            this.btnDeleteBebida.Location = new System.Drawing.Point(503, 316);
+            this.btnDeleteBebida.Name = "btnDeleteBebida";
+            this.btnDeleteBebida.Size = new System.Drawing.Size(195, 34);
+            this.btnDeleteBebida.TabIndex = 16;
+            this.btnDeleteBebida.Text = "Eliminar";
+            this.btnDeleteBebida.UseVisualStyleBackColor = true;
+            this.btnDeleteBebida.Click += new System.EventHandler(this.btnDeleteBebida_Click);
+            // 
             // dgvBebida
             // 
             this.dgvBebida.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBebida.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBebida.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBebida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBebida.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -476,7 +502,7 @@
             // btnVender
             // 
             this.btnVender.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnVender.Location = new System.Drawing.Point(1066, 734);
+            this.btnVender.Location = new System.Drawing.Point(1066, 755);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(195, 34);
             this.btnVender.TabIndex = 14;
@@ -597,7 +623,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 734);
+            this.label4.Location = new System.Drawing.Point(43, 755);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(139, 25);
             this.label4.TabIndex = 10;
@@ -605,7 +631,7 @@
             // 
             // txtTotalPagar
             // 
-            this.txtTotalPagar.Location = new System.Drawing.Point(208, 731);
+            this.txtTotalPagar.Location = new System.Drawing.Point(208, 752);
             this.txtTotalPagar.Name = "txtTotalPagar";
             this.txtTotalPagar.Size = new System.Drawing.Size(117, 31);
             this.txtTotalPagar.TabIndex = 0;
@@ -695,5 +721,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Button btnDeletePlato;
+        private System.Windows.Forms.Button btnDeleteBebida;
     }
 }

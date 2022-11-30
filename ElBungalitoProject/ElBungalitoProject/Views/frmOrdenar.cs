@@ -31,10 +31,10 @@ namespace ElBungalitoProject.Views
         public frmOrdenar()
         {
             InitializeComponent();
-            panelFill.Visible = false;
             txtNumOrden.Visible= false;
 
             //Deshabilitar controles
+            panelFill.Enabled = false;
             cmbEspecialidadPlato.Enabled = false;
             numCantidadPlato.Enabled = false;
             txtSubTotalPlato.Enabled = false;
@@ -42,6 +42,8 @@ namespace ElBungalitoProject.Views
             numCantidadBebida.Enabled = false;
             txtSubTotalBebida.Enabled = false;
             txtTotalPagar.Enabled = false;
+            btnDeleteBebida.Enabled=false;
+            btnDeletePlato.Enabled=false;
         }
 
         private void frmOrdenar_Load(object sender, EventArgs e)
@@ -56,7 +58,7 @@ namespace ElBungalitoProject.Views
             {
                 GTP.ViewTipoPlato().Clear();
                 GTB.ViewTipoBebida().Clear();
-                panelFill.Visible = true;
+                panelFill.Enabled = true;
 
                 //Cargar los datos de la tabla tipo plato en su cmb
                 cmbTipoPlato.Text = "";
@@ -182,12 +184,13 @@ namespace ElBungalitoProject.Views
                         string valor = dgvPlato.Rows[fila].Cells[5].Value.ToString();
                         total = total + Convert.ToDouble(valor);
                     }
-                    txtTotalPagar.Text = total.ToString();
+                    double pagar = Convert.ToDouble(txtTotalPagar.Text) + total;
+                    txtTotalPagar.Text = pagar.ToString();
                 }
                 else
                 {
                     MessageBox.Show("Todos los campos deben estar llenos");
-                }
+                } 
             }
             catch (Exception ex)
             {
@@ -198,6 +201,10 @@ namespace ElBungalitoProject.Views
         private void btnAgregarPlato_Click(object sender, EventArgs e)
         {
             AgregarPlatoDGV();
+            if (dgvPlato.Rows.Count > 1)
+            {
+                btnDeletePlato.Enabled = true;
+            }
         }
 
         //Código para bebida
@@ -294,6 +301,10 @@ namespace ElBungalitoProject.Views
         private void btnAgregarBebida_Click(object sender, EventArgs e)
         {
             AgregarBebidaDGV();
+            if (dgvBebida.Rows.Count > 1)
+            {
+                btnDeleteBebida.Enabled = true;
+            }
         }
 
         // Facturación
@@ -363,6 +374,41 @@ namespace ElBungalitoProject.Views
             this.Hide();
             frmMenu frmMenu= new frmMenu();
             frmMenu.Show();
+        }
+
+
+        private void btnDeletePlato_Click(object sender, EventArgs e)
+        {
+            double total=0;
+            if (dgvPlato.SelectedRows.Count > 0)
+            {
+                string valor = dgvPlato.CurrentRow.Cells[5].Value.ToString();
+                total = total + Convert.ToDouble(valor);
+                double pagar = Convert.ToDouble(txtTotalPagar.Text) - total;
+                txtTotalPagar.Text = pagar.ToString();
+                dgvPlato.Rows.Remove(dgvPlato.CurrentRow);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila");
+            }
+        }
+
+        private void btnDeleteBebida_Click(object sender, EventArgs e)
+        {
+            double total = 0;
+            if (dgvBebida.SelectedRows.Count > 0)
+            {
+                string valor = dgvBebida.CurrentRow.Cells[5].Value.ToString();
+                total = total + Convert.ToDouble(valor);
+                double pagar = Convert.ToDouble(txtTotalPagar.Text) - total;
+                txtTotalPagar.Text = pagar.ToString();
+                dgvBebida.Rows.Remove(dgvBebida.CurrentRow);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila");
+            }
         }
     }
 }

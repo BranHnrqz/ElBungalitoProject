@@ -53,5 +53,42 @@ namespace ElBungalitoProject.Datos
             cn.CerrarConexion();
             return Tuple.Create(precio, descripcion);
         }
+
+        public DataTable InnerJoinDetallePlatoMenu(int where)
+        {
+            try
+            {
+                cmd.Connection = cn.AbrirConexion();
+                cmd.CommandText = "Select P.Plato, DP.Especialidad, DP.Descripcion, DP.Precio from DetallePlato as DP inner join Plato as P on DP.idPlato = P.idPlato  inner join TipoPlato on P.idTipoPlato = TipoPlato.idTipoPlato where TipoPlato.idTipoPlato  = '" + where + "'";
+                cmd.CommandType = CommandType.Text;
+                read = cmd.ExecuteReader();
+                dt.Load(read);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Convert.ToString(ex), "Error no se puede obtener la tabla DetallePlato");
+            }
+            cn.CerrarConexion();
+            return dt;
+        }
+        public DataTable MostrarTodoDetalleIJ()
+        {
+            try
+            {
+                cmd.Connection = cn.AbrirConexion();
+                cmd.CommandText = "Select P.Plato, DP.Especialidad, DP.Descripcion, DP.Precio from DetallePlato as DP inner join Plato as P on DP.idPlato = P.idPlato  inner join TipoPlato on P.idTipoPlato = TipoPlato.idTipoPlato";
+                cmd.CommandType = CommandType.Text;
+                read = cmd.ExecuteReader();
+                dt.Load(read);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Convert.ToString(ex), "Error no se puede obtener la tabla DetallePlato");
+            }
+            cn.CerrarConexion();
+            return dt;
+        }
     }
 }

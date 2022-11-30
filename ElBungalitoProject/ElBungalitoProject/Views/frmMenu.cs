@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ElBungalitoProject.Negocio;
 
 namespace ElBungalitoProject.Views
 {
     public partial class frmMenu : Form
     {
+        clsGestionTipoPlato GTP = new clsGestionTipoPlato();
+        clsGestionDetallePlato GDP = new clsGestionDetallePlato();
         public frmMenu()
         {
             InitializeComponent();
@@ -36,6 +39,30 @@ namespace ElBungalitoProject.Views
             this.Hide();
             frmOrdenar frmOrdenar = new frmOrdenar();
             frmOrdenar.Show();
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+            cmbFiltroComida.Text = "";
+            cmbFiltroComida.DataSource = GTP.ViewTipoPlato();
+            cmbFiltroComida.DisplayMember = "Tipo";
+            cmbFiltroComida.ValueMember = "idTipoPlato";
+            dgvMenu.DataSource = GDP.ViewAllDetallePlato();
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            GDP.ViewDetallePlatoMenu((int)cmbFiltroComida.SelectedValue).Clear();
+            if (cmbFiltroComida.SelectedValue != null)
+            {
+                dgvMenu.DataSource = GDP.ViewDetallePlatoMenu((int)cmbFiltroComida.SelectedValue);
+            }
+        }
+
+        private void btnMostrarTodo_Click(object sender, EventArgs e)
+        {
+            GDP.ViewAllDetallePlato().Clear();
+            dgvMenu.DataSource = GDP.ViewAllDetallePlato();
         }
     }
 }

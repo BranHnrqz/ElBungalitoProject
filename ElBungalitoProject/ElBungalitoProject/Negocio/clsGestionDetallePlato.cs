@@ -23,5 +23,15 @@ namespace ElBungalitoProject.Negocio
         {
             return detallePlato.SelectItemsDetallePlatoWhere(where);
         }
+
+        public DataTable ViewDetallePlatoMenu(int where)
+        {
+            return detallePlato.InnerJoinDetallePlatoMenu(where);
+        }
+
+        public DataTable ViewAllDetallePlato()
+        {
+            return detallePlato.MostrarTodoDetalleIJ();
+        }
     }
 }
